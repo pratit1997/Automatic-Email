@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Show message</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<h1 th:text=" 'Thanks Your Mail has been Sent to the '+${user.email}"> </h1>
+
+<p th:text="'Email: ' + ${user.name}"></p>
+<p th:text="'message: ' + ${user.message}"></p>
+<a href="/addUser">Submit another message</a>
+
+</body>
+</html>
